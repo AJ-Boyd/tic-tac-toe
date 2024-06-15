@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'chalkboard';
+    src: url('EraserRegular-DO1D.ttf') format('truetype');
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: antiquewhite;
+    font-family: "chalkboard";
+}
+h2, h4{
+    text-align: center;
+}
+#container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+#gameboard{
+    display: grid;
+    height: 450px;
+    width: 450px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.space{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 64px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+#resetBtn{
+    display: none;
+    margin: 0 auto;  
+}
+
+#space0{
+    border-top: none;
+    border-left: none;
+}
+#space1{
+    border-top: none;
+}
+#space2{
+    border-top: none;
+    border-right: none;
+}
+#space3{
+    border-left: none;
+}
+#space5{
+    border-right: none;
+}
+#space6{
+    border-bottom: none;
+    border-left: none;
+}
+#space7{
+    border-bottom: none;
+}
+#space8{
+    border-bottom: none;
+    border-right: none;
+}
